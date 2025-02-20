@@ -42,7 +42,7 @@ def test_validarCpf_quandoCpfLongo_retornaValueError():
 def test_validarCpf_quandoCpfNaoString_retornaTypeError():
     """Testa um CPF que não é string, esperando um TypeError."""
     # Arrange
-    cpf = 12345678901  # Número inteiro em vez de string
+    cpf = 12345678901 
 
     # Act & Assert
     with pytest.raises(TypeError, match="O CPF deve ser uma string."):
